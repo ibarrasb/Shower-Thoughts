@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" /> -->
+    <title>Shower Thoughts | Your Posts</title>
+    <!--JS Links-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="ADDJS FOLDER"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--CSS Index Handlebars Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/indexhb_style.css">
+    <link href="../public/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Shower Thoughts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="create.html">Create Post</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                View Posts By Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#">Category 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="createbox">
+        <h2 id="createpost">Create A Post</h2>
+        <div class="mb-3" id="posttitle">
+            <label for="exampleFormControlInput1" class="form-label">Post Title</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Thoughts">
+          </div>
+          <div class="mb-3" id="posttext">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter Your Thoughts</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Thought Here"></textarea>
+          </div>
+          <label for="exampleFormControlInput1" class="form-label">Select Category</label>
+          <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+            <option selected>Open To Select Category</option>
+            <option value="1">Category One</option>
+            <option value="2">Category Two</option>
+            <option value="3">Category Three</option>
+          </select>
+          <button type="button" class="btn btn-secondary" type="submit" id="createbtn">Creat Post</button>
+    </div>
+
+</body>

@@ -9,13 +9,18 @@
 		<script src="ADDJS FOLDER"></script>
 
         <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <!--Bootstrap Links-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!--CSS Index Handlebars Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="../public/stylesheets/indexhb_style.css">
+        <link href="../public/stylesheets/style.css" rel="stylesheet">
+       
   </head>
   <body>
 
-  
+  <!--Nav Bar-->
 <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -26,10 +31,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Create Post</a>
+          <a class="nav-link active" aria-current="page" href="create.html">Create Post</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             View Posts By Category
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -44,7 +49,33 @@
 </nav>
 </header>
 
-
-
+<!--Posts-->
+<div class="card_container">
+  <!-- <img class="shower-head" src="../public/images/shower-solid.svg" alt="showerhead">  -->
+<div class="card mt-5 ms-5 allcards" style="width: 60rem;">
+  <h5 class="card-header" name="title">Happy Monday! <time id="post_create"datetime="2021-01-18">Posted:1/18/2021</time></h5> 
+  <div class="card-body">
+    <p class="card-text">I don't link Mondays! I need more days off.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Reply</a>
+  </div>
+  <div class="card-body">
+    <p class="card-text replay">Here is the answer to the question/Post.</p>
+  </div>
+</div>
+<div class="card mt-5 ms-5 allcards" style="width: 60rem;">
+  <h5 class="card-header" name="title">Happy Monday! <time id="post_create"datetime="2021-01-18">Posted:1/18/2021</time></h5> 
+  <div class="card-body">
+    <p class="card-text">I don't link Mondays! I need more days off.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Reply</a>
+  </div>
+  <div class="card-body">
+    <p class="card-text replay">Here is the answer to the question/Post.</p>
+  </div>
+</div>
+</div>
 </body>
 
