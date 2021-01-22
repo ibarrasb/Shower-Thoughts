@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "MYSQL01233",
-    "database": "cat_db",
+    "database": "showerthoughts_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
