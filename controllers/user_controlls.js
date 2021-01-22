@@ -19,13 +19,13 @@ router.get("/", function(req, res) {
 });
 
 // Create Title, Description, Category
-router.post("/api/user", function(req, res) {
+router.post("/api/create", function(req, res) {
   user.create([
     "post_title", "post_desc","post_date", "cat_id"
   ], [
     req.body.post_title, 
     req.body.post_desc, 
-    req.body.post_date,
+    // req.body.post_date,
     req.body.cat_id
   ], function(result) {
     // Send back the ID of the new post
