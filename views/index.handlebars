@@ -1,21 +1,24 @@
-
-{{> navbar}}
+{{>navbar}}
 <!--Posts-->
+{{#each thoughts}}
 <div class="card_container">
   <!-- <img class="shower-head" src="../public/images/shower-solid.svg" alt="showerhead">  -->
-<div class="card mt-5 ms-5 allcards" style="width: 60rem;">
-  <h5 class="card-header" name="title">Happy Monday! <time id="post_create"datetime="2021-01-18">Posted:1/18/2021</time></h5> 
-  <div class="card-body">
-    <p class="card-text">I don't link Mondays! I need more days off.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link">Reply</a>
-  </div>
-  <div class="card-body">
-    <!--add input field to enter text-->
-    <p class="card-text replay">Here is the answer to the question/Post.</p>
+  <div class="card mt-5 ms-5 allcards" style="width: 60rem;">
+    <h5 class="card-header" name="title">{{post_title}} <time id="post_create"
+        datetime="2021-01-18">{{post_date}}</time></h5>
+    <div class="card-body">
+      <p class="card-text">{{post_desc}}</p>
+    </div>
+    <div class="card-body">
+      <a href="#" class="card-link">Reply</a>
+    </div>
+
+    <div class="card-body">
+      <!--add input field to enter text-->
+      <p class="card-text replay">Here is the answer to the question/Post.</p>
+    </div>
   </div>
 </div>
-
-
-
+{{/each}}
+{{!--
+</body> --}}
