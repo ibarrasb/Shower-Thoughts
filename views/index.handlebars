@@ -10,15 +10,14 @@
       <p class="card-text">{{post_desc}}</p>
     </div>
     <div class="card-body">
-      <a href="#" class="card-link">Reply</a>
-    </div>
-
-    <div class="card-body">
-      <!--add input field to enter text-->
-      <p class="card-text replay">Here is the answer to the question/Post.</p>
+      <button type="button" class="btn btn-secondary" type="submit" id="reply">Reply</button>
+      <div class="mb-3" id="postuser" style="display:">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name</label>
+        <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Reply</label>
+        <textarea class="form-control" id="rep_desc" rows="3" placeholder="Enter Your Reply"></textarea>
+      </div>
     </div>
   </div>
-</div>
-{{/each}}
-{{!--
-</body> --}}
+  {{/each}}
+  {{!--</body> --}}

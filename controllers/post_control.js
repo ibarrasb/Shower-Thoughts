@@ -29,16 +29,21 @@ router.get("/index", function (req, res) {
   );
 });
 
-router.post ("/api/create", function (req, res) {
-  db.Posts.create(
-    req.body
-    // .post_title,
-    // req.body.post_desc,
-    // req.body.user_id,
-  ).then ( function (dbPost) {
-    console.log(dbPost);
-    res.json(dbPost);
-  })
+router.post("/api/create", function (req, res) {
+  db.Posts.create(req.body)
+    .then(function (dbPost) {
+      console.log(dbPost);
+      res.json(dbPost);
+    })
+})
+
+router.post("/api/reply", function (req, res) {
+  console.log(req.body)
+  db.Reply.create(req.body)
+    .then(function (dbReply) {
+      console.log(dbReply);
+      res.json(dbReply);
+    })
 })
 
 // Reply Reply description username of the person that is replying
