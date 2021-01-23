@@ -8,17 +8,20 @@ $(function () {
             post_desc: $("#post_desc").val().trim(),
             user_id: $("#user_id").val().trim(),
             // cat_id: $("#cat_id")
-            
+
         };
         console.log(newPost)
-        $.ajax("/api/create",{
+        $.ajax("/api/create", {
             type: "POST",
             data: newPost
-        }).then (function(){
+        }).done(function () {
             console.log("New Post: " + newPost);
             //after submit and create new post re-direct to index with all posts
-            location.replace("/api/index");
+            location.replace("/index");
         })
+        // .catch(function(err) {
+        //     console.error(err);
+        // })
 
     })
 })
