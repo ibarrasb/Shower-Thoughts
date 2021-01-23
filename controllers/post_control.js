@@ -29,6 +29,18 @@ router.get("/index", function (req, res) {
   );
 });
 
+router.post ("/api/create", function (req, res) {
+  db.Posts.create([
+    "post_title", "post_desc" , "user_id"
+  ], [
+    req.body.post_title,
+    req.body.post_desc,
+    req.body.user_id,
+  ]).then ( function (dbPost) {
+    console.log(dbPost);
+    res.json(dbPost);
+  })
+})
 
 // Reply Reply description username of the person that is replying
 router.post("/api/user", function (req, res) {

@@ -1,15 +1,16 @@
 $(function () {
 
     //On Post Title and Post Description
-    $(".create-form").on("submit", function (event) {
+    $("#createbtn").on("click", function (event) {
         event.preventDefault();
-
         var newPost = {
             post_title: $("#post_title").val().trim(),
             post_desc: $("#post_desc").val().trim(),
+            user_id: $("#user_id").val().trim(),
             // cat_id: $("#cat_id")
             
         };
+        console.log(newPost)
         $.ajax("/api/create",{
             type: "POST",
             data: newPost
