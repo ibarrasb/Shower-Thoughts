@@ -1,22 +1,26 @@
 {{>navbar}}
 <!--Posts-->
+<h2 id="title"> All Thoughts</h2>
 {{#each thoughts}}
+
 <div class="card_container">
-  <!-- <img class="shower-head" src="../public/images/shower-solid.svg" alt="showerhead">  -->
-  <div class="card mt-5 ms-5 allcards" style="width: 60rem;">
-    <h5 class="card-header" name="title">{{post_title}} <time id="post_create"
-        datetime="2021-01-18">{{post_date}}</time></h5>
+  <div class="card" id="allcards" style="width: 60rem;">
+    <h5 class="card-header" name="title">{{user_name}}: {{post_title}} <time id="post_create"
+        datetime="2021-01-18">{{post_date}}</time> 
+        
     <div class="card-body">
       <p class="card-text">{{post_desc}}</p>
     </div>
     <div class="card-body">
-      <button type="button" class="btn btn-secondary" type="submit" id="reply">Reply</button>
-      <div class="mb-3" id="postuser" style="display:">
-        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name</label>
-        <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea>
-        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Reply</label>
+     
+      <div class="mb-3" id="post_user" style="display:">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name <input type="text" class="form-control" id="user_name">
+        {{!-- <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea> --}}
+        </label>
+        <label for="exampleFormControlTextarea1" class="form-label"></label>
         <textarea class="form-control" id="rep_desc" rows="3" placeholder="Enter Your Reply"></textarea>
       </div>
+       <button type="button" class="btn btn-secondary" type="submit" id="reply">Reply</button>
     </div>
   </div>
   {{/each}}
