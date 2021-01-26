@@ -17,8 +17,100 @@
 }
 .homebtn{
     margin-top: 40px;
-    margin-left: 30px;
- 
+    margin-left: 20px;
+  
+}
+
+footer{
+    margin-top: 300px;
+    color: #f5f6f7;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    #shower_image{
+        margin-left: 40%;
+     }
+
+     #maincontent{
+         margin-top: 200px;
+     }
+     .homebtn{
+        margin-top: 40px;
+        margin-left: 30px;
+     
+    }
+}
+
+@media (min-width: 540px){
+    #shower_image{
+        margin-left: 40%;
+        height: 200px;
+        width: 200px;
+     }
+
 }
 
 
+@media (min-width: 480px){
+    #shower_image{
+        margin-left: 40%;
+        height: 200px;
+        width: 200px;
+     }
+     #title{
+        font-family: 'Mali', cursive;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 45px;
+        color: #f5f6f7;
+    }
+}
+
+@media (min-width: 360px){
+    #shower_image{
+        margin-left: 35%;
+        height: 200px;
+        width: 200px;
+     }
+     #title{
+        font-family: 'Mali', cursive;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 30px;
+        color: #f5f6f7;
+    }
+
+    #home_text{
+        text-align: center;
+        font-family: 'Mali', cursive;
+        color:#f5f6f7;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 320px){
+    #shower_image{
+        margin-left: 35%;
+        height: 150px;
+        width: 150px;
+        margin-top: 0px;
+     }
+     #title{
+        font-family: 'Mali', cursive;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 30px;
+        color: #f5f6f7;
+    }
+
+    #home_text{
+        text-align: center;
+        font-family: 'Mali', cursive;
+        color:#f5f6f7;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+}
