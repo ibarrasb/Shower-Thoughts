@@ -74,5 +74,11 @@ router.delete("/api/thoughts/:id", function (req, res) {
   });
 });
 
+
+//To render home
+router.get("/home", function(req, res){
+  res.render("home");
+});
+
 // Export routes for server.js to use.
 module.exports = router;

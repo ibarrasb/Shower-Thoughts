@@ -31,6 +31,8 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 var post_routes = require("./controllers/post_control");
 app.use(post_routes);
+
+
 // var post_routes = require("./controllers/user_controls.js");
 // app.use(post_routes);
 
