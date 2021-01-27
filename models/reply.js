@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     Reply.associate = function (models) {
-        Reply.belongsTo(models.Post, {
+        Reply.belongsTo(models.Posts, {
             foreignKey: {
                 name: 'post_id',
                 targetKey: 'id',
@@ -13,23 +13,6 @@ module.exports = function (sequelize, DataTypes) {
             }
         });
     };
-    // Reply.associate = function (models) {
-    //     Reply.belongsTo(models.User, {
-    //         foreignKey: {
-    //             name: 'user_id',
-    //             targetKey: 'id',
-    //             allowNull: false
-    //         }
-    //     });
-    // };
-    Reply.associate = function (models) {
-        Reply.belongsTo(models.Category, {
-            foreignKey: {
-                name: 'cat_id',
-                targetKey: 'id',
-                allowNull: true
-            }
-        });
-    };
+
     return Reply;
 };
