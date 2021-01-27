@@ -23,6 +23,11 @@
 
 }
 
+#comments{
+  border-top: 2px solid black;
+  padding: top 10px;
+}
+
 #post_user{
   border-top: 2px solid black;
   padding: top 10px;;
