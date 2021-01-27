@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "MYSQL01233",
+    "password": "P@ssw0rd",
     "database": "showerthoughts_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

@@ -8,24 +8,5 @@ module.exports = function (sequelize, DataTypes) {
   {timestamps: false}
   );
 
-  // Post.associate = function (models) {
-  //   Post.belongsTo(models.Category, {
-  //     foreignKey: {
-  //       name: 'cat_id',
-  //       targetKey: 'id',
-  //       allowNull: false
-  //     }
-  //   });
-  // };
-  // Post.associate = function (models) {
-  //   Post.belongsTo(models.User, {
-  //     foreignKey: {
-  //       name: 'user_id',
-  //       targetKey: 'id',
-  //       allowNull: false
-  //     }
-  //   });
-
-  // };
   return Post;
 };

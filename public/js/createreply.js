@@ -7,12 +7,12 @@ $(function () {
         var newReply = {
             usernme: $("#user_name").val().trim(),
             rep_desc: $("#rep_desc").val().trim(),
-            // post_id: $("#post_desc").val().trim()
+            post_id: event.target.dataset.id
 
-            // cat_id: $("#cat_id")
+
 
         };
-        console.log(newReply)
+        console.log(event.target.dataset.id)
         $.ajax("/api/reply", {
             type: "POST",
             data: newReply
