@@ -27,6 +27,8 @@ body{
   font-family: 'Mali', cursive;
 }
 
+
+
 @media (max-width: 1024px){
   #allcards{
     margin-left: 70px;
