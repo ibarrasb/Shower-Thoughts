@@ -2,27 +2,20 @@
 {{> navbar}}
 <!--Create Form-->
 <div class="container" id="createbox">
-  <h2 id="createpost">Create A Post</h2>
+  <h2 id="createpost">Share A Thought</h2>
   <div class="create-form">
-    <div class="mb-3" id="posttitle">
+      <div class="mb-3" id="postuser">
+      <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name</label>
+      <input class="form-control" id="user_id" rows="3" placeholder="Enter Your Name">
+    </div>
+    {{!-- <div class="mb-3" id="posttitle">
       <label for="exampleFormControlInput1" class="form-label">Post Title</label>
       <input type="email" class="form-control" id="post_title" placeholder="Enter Your Thoughts">
-    </div>
+    </div> --}}
     <div class="mb-3" id="posttext">
       <label for="exampleFormControlTextarea1" class="form-label">Enter Your Thoughts</label>
       <textarea class="form-control" id="post_desc" rows="3" placeholder="Enter Your Thought Here"></textarea>
     </div>
-    <div class="mb-3" id="postuser">
-      <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name</label>
-      <input class="form-control" id="user_id" rows="3" placeholder="Enter Your Name">
-    </div>
-    {{!-- <label for="exampleFormControlInput1" class="form-label">Select Category</label>
-    <select class="form-select form-select-sm mb-3" id="cat_id" aria-label=".form-select-lg example"> --}}
-      {{!-- <option selected>Open To Select Category</option>
-      <option value="1">Category One</option>
-      <option value="2">Category Two</option>
-      <option value="3">Category Three</option>
-    </select> --}}
     <button type="button" class="btn btn-secondary justify-content" type="submit" id="createbtn">Creat Post</button>
   </div>
 </div>
