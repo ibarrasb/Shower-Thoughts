@@ -1,5 +1,6 @@
-#shower_image{
-   margin-left: 45%;
+#image{
+   margin-left: 500px;
+   height: 400px;
 }
 #home_text{
     text-align: center;
@@ -17,7 +18,7 @@
 }
 .homebtn{
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 35px;
   
 }
 
@@ -27,13 +28,20 @@ footer{
     text-align: center;
 }
 
-@media (min-width: 768px){
-    #shower_image{
-        margin-left: 40%;
+@media (max-width: 1024px){
+    #image{
+        margin-top: 20px;
+        margin-left: 350px;
+     }
+}
+
+@media (max-width: 768px){
+    #image{
+        margin-left: 230px;
      }
 
      #maincontent{
-         margin-top: 200px;
+         margin-top: 100px;
      }
      .homebtn{
         margin-top: 40px;
@@ -42,9 +50,10 @@ footer{
     }
 }
 
-@media (min-width: 540px){
-    #shower_image{
-        margin-left: 40%;
+@media (max-width: 540px){
+    #image{
+        margin-top: 30px;
+        margin-left: 190px;
         height: 200px;
         width: 200px;
      }
@@ -52,9 +61,10 @@ footer{
 }
 
 
-@media (min-width: 480px){
-    #shower_image{
-        margin-left: 40%;
+@media (max-width: 480px){
+    #image{
+        margin-top: 30px;
+        margin-left: 180px;
         height: 200px;
         width: 200px;
      }
@@ -67,11 +77,55 @@ footer{
     }
 }
 
-@media (min-width: 360px){
-    #shower_image{
-        margin-left: 35%;
+@media (max-width: 414px){
+    #image{
+        margin-top: 30px;
+        margin-left: 150px;
         height: 200px;
         width: 200px;
+     }
+     #title{
+        font-family: 'Mali', cursive;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 45px;
+        color: #f5f6f7;
+    }
+}
+
+@media (max-width: 375px){
+    #image{
+        margin-top: 5px;
+        margin-left: 130px;
+        height: 200px;
+        width: 200px;
+     }
+     #title{
+        font-family: 'Mali', cursive;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 35px;
+        color: #f5f6f7;
+    }
+    #home_text{
+        text-align: center;
+        font-family: 'Mali', cursive;
+        color:#f5f6f7;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .homebtn{
+        margin-top: 40px;
+        margin-left: 15px;
+     
+    }
+}
+
+@media (max-width: 360px){
+    #image{
+        margin-left: 30%;
+        height: 180px;
+        width: 180px;
      }
      #title{
         font-family: 'Mali', cursive;
@@ -88,10 +142,16 @@ footer{
         font-size: 15px;
         font-weight: 700;
     }
+
+    .homebtn{
+        margin-top: 40px;
+        margin-left: 10px;
+     
+    }
 }
 
-@media (min-width: 320px){
-    #shower_image{
+@media (max-width: 320px){
+    #image{
         margin-left: 35%;
         height: 150px;
         width: 150px;

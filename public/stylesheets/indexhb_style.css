@@ -15,21 +15,101 @@ body{
   text-align: center;
   margin-top: 18px;
   font-family: 'Mali', cursive;
-    font-weight: 700;
+  font-weight: 700;
 
 }
+/* Card Styling*/
 #allcards{
-  justify-content: left;
   margin-top: 30px;
   max-width: 60rem;
- 
+  float: none !important; 
+  margin-left: 220px;
+  font-family: 'Mali', cursive;
 }
 
-
-@media (min-width: 768px){
+@media (max-width: 1024px){
   #allcards{
-    margin-left: 0px;
+    margin-left: 70px;
+    max-width: 55rem;
+    
+  }
+}
+
+@media (max-width: 768px){
+  #allcards{
+    margin-left:65px;
     margin-top: 30px;
+    max-width: 40rem;
+    
+  }
+
+}
+
+@media (max-width: 540px){
+  #allcards{
+    margin-left:30px;
+    margin-top: 30px;
+    max-width: 30rem;
+    
+  }
+
+}
+
+@media (max-width: 480px){
+  #allcards{
+    margin-left:26px;
+    margin-top: 30px;
+    max-width: 27rem;
+    
+  }
+
+}
+
+@media (max-width: 414px){
+  #allcards{
+    margin-left:26px;
+    margin-top: 30px;
+    max-width: 23rem;
+    
+  }
+
+}
+
+@media (max-width: 375px){
+  #allcards{
+    margin-left:20px;
+    margin-top: 30px;
+    max-width: 21rem;
+    
+  }
+
+}
+
+@media (max-width: 360px){
+  #allcards{
+    margin-left:23px;
+    margin-top: 30px;
+    max-width: 20rem;
+    
+  }
+
+}
+
+@media (max-width: 320px){
+  #allcards{
+    margin-left:18px;
+    margin-top: 30px;
+    max-width: 18rem;
+    
+  }
+
+}
+
+@media (max-width: 280px){
+  #allcards{
+    margin-left:15px;
+    margin-top: 30px;
+    max-width: 16rem;
     
   }
 
@@ -41,100 +121,4 @@ body{
 
 
 
-
-
-  /*Create Post Page Styling*/
-  #createbox{
-      border-radius: 25px;
-      background: #f5f6f7;
-      padding-bottom: 50px;
-      padding-top: 10px;
-      margin-top: 50px;
-      width: 850px;
-      height: 500px;
-      
-
-  }
-  #createpost{
-      color: #000000;
-      text-align: center;
-      margin-top: 10px;
-      font-family: 'Mali', cursive;
-        font-weight: 700;
-  }
-
-  #posttitle,#posttext,#postuser{
-    font-family: 'Mali', cursive;
-
-  }
-
-  #post_user{
-    border-top: 2px solid black;
-    padding: top 10px;;
-  }
-  #createbtn{
-     margin-left: 45%;
-  }
-
-  @media (min-width: 540px){
-    #createbox{
-      border-radius: 25px;
-      background: #f5f6f7;
-      padding-bottom: 50px;
-      padding-top: 10px;
-      margin-top: 50px;
-      width: 500px;
-      height: 500px;
-  }
-  #createbtn{
-    margin-left: 35%;
-  }
-
-}
-
-@media (min-width: 480px){
-  #createbox{
-    border-radius: 25px;
-    background: #f5f6f7;
-    padding-bottom: 50px;
-    padding-top: 10px;
-    margin-top: 50px;
-    width: 400px;
-    height: 500px;
-}
-
-#createbtn{
-  margin-left: 35%;
-}
-
-}
-
-@media (min-width: 360px){
-  #createbox{
-    border-radius: 25px;
-    background: #f5f6f7;
-    padding-bottom: 50px;
-    padding-top: 10px;
-    margin-top: 50px;
-    width: 330px;
-    height: 500px;
-}
-#createbtn{
-  margin-left: 35%;
-}
-}
-
-@media (min-width: 320px){
-  #createbox{
-    border-radius: 25px;
-    background: #f5f6f7;
-    padding-bottom: 50px;
-    padding-top: 10px;
-    margin-top: 50px;
-    width: 288px;
-    height: 500px;
-}
-#createbtn{
-  margin-left: 30%;
-}
-}
+  

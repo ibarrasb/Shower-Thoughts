@@ -1,0 +1,130 @@
+/*Create Post Page Styling*/
+#createbox{
+    border-radius: 25px;
+    background: #f5f6f7;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin-top: 50px;
+    width: 850px;
+    height: 500px;
+    
+
+}
+#createpost{
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Mali', cursive;
+      font-weight: 700;
+}
+
+#posttitle,#posttext,#postuser{
+  font-family: 'Mali', cursive;
+
+}
+
+#comments{
+  border-top: 2px solid black;
+  padding: top 10px;
+}
+
+#post_user{
+  border-top: 2px solid black;
+  padding: top 10px;;
+}
+#createbtn{
+   margin-left: 45%;
+   margin-top: 20px;
+}
+
+@media (max-width: 540px){
+  #createbox{
+    border-radius: 25px;
+    background: #f5f6f7;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+}
+#createbtn{
+  margin-left: 35%;
+}
+
+}
+
+
+
+@media (max-width: 480px){
+#createbox{
+  border-radius: 25px;
+  background: #f5f6f7;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin-top: 50px;
+  width: 400px;
+  height: 500px;
+}
+
+#createbtn{
+margin-left: 35%;
+}
+
+}
+
+@media (max-width: 414px){
+    #createbox{
+      border-radius: 25px;
+      background: #f5f6f7;
+      padding-bottom: 50px;
+      padding-top: 10px;
+      margin-top: 50px;
+      width: 360px;
+      height: 500px;
+    }
+}
+
+@media (max-width: 360px){
+#createbox{
+  border-radius: 25px;
+  background: #f5f6f7;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin-top: 50px;
+  width: 330px;
+  height: 500px;
+}
+#createbtn{
+margin-left: 35%;
+}
+}
+
+@media (max-width: 320px){
+#createbox{
+  border-radius: 25px;
+  background: #f5f6f7;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin-top: 50px;
+  width: 288px;
+  height: 500px;
+}
+#createbtn{
+margin-left: 30%;
+}
+}
+
+@media (max-width: 280px){
+    #createbox{
+      border-radius: 25px;
+      background: #f5f6f7;
+      padding-bottom: 50px;
+      padding-top: 10px;
+      margin-top: 50px;
+      width: 250px;
+      height: 500px;
+    }
+    #createbtn{
+    margin-left: 30%;
+    }
+    }
