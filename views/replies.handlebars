@@ -14,11 +14,11 @@
 
         <div class="mb-3" id="post_user" style="display:">
           <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name <input type="text"
-              class="form-control" id="user_name">
+              class="form-control" id="user_name_{{id}}">
             {{!-- <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea> --}}
           </label>
           <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="rep_desc" rows="3" placeholder="Enter Your Reply"></textarea>
+          <textarea class="form-control" id="rep_desc_{{id}}" rows="3" placeholder="Enter Your Reply"></textarea>
         </div>
         <button type="button" class="btn btn-secondary" type="submit" data-id={{id}} id="reply">Reply</button>
       </div>

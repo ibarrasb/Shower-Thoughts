@@ -2,7 +2,7 @@ $(function () {
 
     //On Post Title and Post Description
     $(document).on("click","#reply", function (event) {
-        console.log(event)
+        console.log("works")
         event.preventDefault();
         var newReply = {
             usernme: $("#user_name_" + event.target.dataset.id).val().trim(),
@@ -19,7 +19,7 @@ $(function () {
         }).done(function () {
             console.log("New Post: " + newReply);
             //after submit and create new post re-direct to index with all posts
-            location.replace("/index");
+            location.replace("/index/"+ newReply.post_id);
         })
     })
 })

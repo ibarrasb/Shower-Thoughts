@@ -75,8 +75,9 @@ router.get("/index/:id", function (req, res) {
             console.log(JSON.stringify(rdata))
             console.log("data" + rdata)
             var replyObject = {
+              thoughts: data,
               replies: rdata,
-              thoughts: data
+             
             }
             res.render('replies', replyObject);
           });
