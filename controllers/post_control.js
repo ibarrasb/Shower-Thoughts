@@ -15,16 +15,20 @@ router.get("/index", function (req, res) {
   }
   db.Posts.findAll({
     order: [
-      ['post_date', 'DESC']
+      ['post_date', 'ASC']
     ]
   }).then(
     function (data) {
-      console.log(data)
-      var hbsObject = {
-        thoughts: data
-      };
-
-      res.render('index', hbsObject);
+      // res.render('index', hbsObject);
+      db.Reply.findAll({}).then(
+        function (rdata) {
+          console.log("data" + rdata)
+          var replyObject = {
+            replies: rdata,
+            thoughts: data
+          }
+          res.render('index', replyObject);
+        });
     }
   );
 });
@@ -78,9 +82,17 @@ router.delete("/api/thoughts/:id", function (req, res) {
 
 
 //To render home
-router.get("/home", function(req, res){
+router.get("/home", function (req, res) {
   res.render("home");
 });
 
 // Export routes for server.js to use.
 module.exports = router;
+
+
+
+
+// select o.usernme , o.rep_desc from replies o
+// join Posts b on 
+// o.post_id = b.id
+// where o.post_id = ?;

@@ -2,26 +2,27 @@
 <!--Posts-->
 <h2 id="title"> All Thoughts</h2>
 {{#each thoughts}}
-
 <div class="card_container ">
-  <div class="card " id="allcards" >
-    <h5 class="card-header" name="title">{{id}} {{user_name}}: {{post_title}} <time id="post_create"
-        datetime="2021-01-18">{{post_date}}</time> 
-        
+  <div class="card " id="allcards">
+    <h5 class="card-header" name="title">{{user_name}}: {{post_title}} <time id="post_create"
+        datetime="2021-01-18">{{post_date}}</time> </h5>
     <div class="card-body">
       <p class="card-text">{{post_desc}}</p>
     </div>
     <div class="card-body">
-     
       <div class="mb-3" id="post_user" style="display:">
-        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name <input type="text" class="form-control" id="user_name">
-        {{!-- <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea> --}}
+        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name <input type="text"
+            class="form-control" id="user_name_{{id}}">
+          {{!-- <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea> --}}
         </label>
         <label for="exampleFormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="rep_desc" rows="3" placeholder="Enter Your Reply"></textarea>
+        <textarea class="form-control" id="rep_desc_{{id}}" rows="3" placeholder="Enter Your Reply"></textarea>
       </div>
-       <button type="button" class="btn btn-secondary" data-id={{id}} type="submit" id="reply">Reply</button>
+      <button type="button" class="btn btn-secondary" data-id={{id}} type="submit" id="reply">Reply</button>
     </div>
+    {{#each ../replies}}
+    <p id="rep_desc_{{id}}" class="card-header" name="title">{{usernme}}: {{rep_desc}}</p>
+    {{/each}}
+    {{/each}}
   </div>
-  {{/each}}
   {{!--</body> --}}

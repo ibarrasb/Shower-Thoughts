@@ -5,14 +5,14 @@ $(function () {
         console.log(event)
         event.preventDefault();
         var newReply = {
-            usernme: $("#user_name").val().trim(),
-            rep_desc: $("#rep_desc").val().trim(),
+            usernme: $("#user_name_" + event.target.dataset.id).val().trim(),
+            rep_desc: $("#rep_desc_" + event.target.dataset.id).val().trim(),
             post_id: event.target.dataset.id
 
 
 
         };
-        console.log(event.target.dataset.id)
+        console.log("NEW REPLY!" + newReply)
         $.ajax("/api/reply", {
             type: "POST",
             data: newReply
