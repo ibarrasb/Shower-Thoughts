@@ -1,15 +1,14 @@
 {{>navbar}}
 <!--Posts - View All Posts-->
-<h2 id="title"> All Thoughts</h2>
+<h2 id="title"> Some Thoughts</h2>
 {{#each thoughts}}
 <div class="card_container ">
   <div class="card " id="allcards">
   
-    <h5 class="card-header" name="title">{{user_name}} {{post_title}} <time id="post_create"
+    <h5 class="card-header" name="title">{{user_name}} : {{post_title}} <time id="post_create"
         datetime="2021-01-18">{{post_date}}</time>
       <div class="card-body">
         <p class="card-text">{{post_desc}}</p>
-        <button type="button" class="btn btn-secondary" type="submit" id="delete" style= "font-size:12px;">Delete Thought</button>
       </div>
       <div class="card-body">
 
@@ -21,10 +20,10 @@
           <label for="exampleFormControlTextarea1" class="form-label"></label>
           <textarea class="form-control" id="rep_desc_{{id}}" rows="3" placeholder="Enter Your Reply"></textarea>
         </div>
-        <button type="button" class="btn btn-secondary" type="submit" data-id={{id}} id="reply">Reply</button>
+        <button type="button" class="btn btn-secondary" type="submit" data-id={{id}} id="reply">Add Comment</button>
       </div>
       <div>
-        <h5 id="comments">Comments</h5>
+        <h5 id="comments: ">Comments</h5>
         {{#each ../replies}}
         <p class="form-control" id="rep_text" rows="3" placeholder="Enter Your Reply">{{usernme}} : {{rep_desc}}</p>
         {{/each}}

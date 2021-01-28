@@ -9,11 +9,12 @@
         datetime="2021-01-18">{{post_date}}</time>
       <div class="card-body">
         <p class="card-text">{{post_desc}}</p>
-        <button type="button" class="btn btn-secondary" type="submit" id="delete" style= "font-size:12px;">Delete Thought</button>
+        
       </div>
       
       {{!-- <div> --}}
-        <button id="comments" data-id={{id}} class="comment">Comments</button>
+        <button  data-id={{id}} class="comment">Comments</button>
+        
         {{!-- {{#each ../replies}}
         <p class="form-control" id="rep_text" rows="3" placeholder="Enter Your Reply">{{usernme}} : {{rep_desc}}</p>
         {{/each}}

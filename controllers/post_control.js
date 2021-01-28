@@ -118,14 +118,16 @@ router.delete("/api/thoughts/:id", function (req, res) {
 router.get("/home", function (req, res) {
   res.render("home");
 });
+router.get("/", function (req, res) {
+  res.render("home");
+});
+
+router.get("/create", function (req, res) {
+  res.render("create");
+});
 
 // Export routes for server.js to use.
 module.exports = router;
 
 
 
-
-// select o.usernme , o.rep_desc from replies o
-// join Posts b on 
-// o.post_id = b.id
-// where o.post_id = ?;
