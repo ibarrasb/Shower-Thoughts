@@ -15,16 +15,26 @@ router.get("/index", function (req, res) {
   }
   db.Posts.findAll({
     order: [
-      ['post_date', 'DESC']
+      ['post_date', 'ASC']
     ]
   }).then(
     function (data) {
-      console.log(data)
-      var hbsObject = {
-        thoughts: data
-      };
-
-      res.render('index', hbsObject);
+      // res.render('index', hbsObject);
+      db.Reply.findAll({
+        // where: [{
+        //   post_id: req.params.id
+        // }]
+      })
+        .then(
+          function (rdata) {
+            console.log(JSON.stringify(data))
+            console.log("data" + rdata)
+            var replyObject = {
+              replies: rdata,
+              thoughts: data
+            }
+            res.render('index', replyObject);
+          });
     }
   );
 });
@@ -46,7 +56,33 @@ router.post("/api/reply", function (req, res) {
     })
 })
 
+//render replies page
 
+router.get("/index/:id", function (req, res) {
+  db.Posts.findAll({
+    where: [{
+      id: req.params.id
+    }]
+  }).then(
+    function (data) {
+      db.Reply.findAll({
+        where: [{
+          post_id: req.params.id
+        }]
+      })
+        .then(
+          function (rdata) {
+            console.log(JSON.stringify(rdata))
+            console.log("data" + rdata)
+            var replyObject = {
+              replies: rdata,
+              thoughts: data
+            }
+            res.render('replies', replyObject);
+          });
+    }
+  );
+});
 
 // Reply Reply description username of the person that is replying
 router.post("/api/user", function (req, res) {
@@ -78,9 +114,17 @@ router.delete("/api/thoughts/:id", function (req, res) {
 
 
 //To render home
-router.get("/home", function(req, res){
+router.get("/home", function (req, res) {
   res.render("home");
 });
 
 // Export routes for server.js to use.
 module.exports = router;
+
+
+
+
+// select o.usernme , o.rep_desc from replies o
+// join Posts b on 
+// o.post_id = b.id
+// where o.post_id = ?;
