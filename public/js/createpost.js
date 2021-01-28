@@ -4,7 +4,7 @@ $(function () {
     $(document).on("click", "#createbtn", function (event) {
         event.preventDefault();
         var newPost = {
-            post_title: $("#post_title").val().trim(),
+            // post_title: $("#post_title").val().trim(),
             post_desc: $("#post_desc").val().trim(),
             user_name: $("#user_id").val().trim(),
             // cat_id: $("#cat_id")
