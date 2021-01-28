@@ -11,7 +11,23 @@
         <p class="card-text">{{post_desc}}</p>
         <button type="button" class="btn btn-secondary" type="submit" id="delete" style= "font-size:12px;">Delete Thought</button>
       </div>
+<<<<<<< HEAD
       
+=======
+      <div class="card-body">
+
+        <div class="mb-3" id="post_user" style="display:">
+          <label for="exampleFormControlTextarea1" class="form-label">Enter Your Name <input type="text"
+              class="form-control" id="user_name_{{id}}">
+            {{!-- <textarea class="form-control" id="user_name" rows="3" placeholder="Enter Your Name"></textarea> --}}
+          </label>
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control" id="rep_desc_{{id}}" rows="3" placeholder="Enter Your Reply"></textarea>
+        </div>
+        <button type="button" class="btn btn-secondary" type="submit" data-id={{id}} id="reply">Reply</button>
+      </div>
+      <div>
+>>>>>>> 118a5d90774174654571967cc3bd4fd24d6c5296
         <h5 id="comments">Comments</h5>
         {{#each ../replies}}
         <p class="form-control" id="rep_text" rows="3" placeholder="Enter Your Reply">{{usernme}} : {{rep_desc}}</p>

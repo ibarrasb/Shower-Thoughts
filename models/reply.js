@@ -1,7 +1,8 @@
 module.exports = function (sequelize, DataTypes) {
     var Reply = sequelize.define("Reply", {
         rep_desc: DataTypes.STRING,
-        usernme: DataTypes.STRING
+        usernme: DataTypes.STRING,
+   
     });
 
     Reply.associate = function (models) {
@@ -9,7 +10,9 @@ module.exports = function (sequelize, DataTypes) {
             foreignKey: {
                 name: 'post_id',
                 targetKey: 'id',
-                allowNull: false
+                allowNull: false,
+        
+            
             }
         });
     };

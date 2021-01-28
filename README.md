@@ -2,7 +2,7 @@
 Cutting edge music wShower Thoughts is an app where you can share and reply to  thoughts or questions about any topic. 
 This is a browser app; works on the desktop and mobile devices.
 
-# Criteria provider by the client:**
+# Criteria provider by the client:
 
 Our customer would like to have an application where users can share thoughts on any topics or post questions for others to answer.
 
