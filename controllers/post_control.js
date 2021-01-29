@@ -15,7 +15,7 @@ router.get("/index", function (req, res) {
   }
   db.Posts.findAll({
     order: [
-      ['post_date', 'ASC']
+      ['id', 'DESC']
     ]
   }).then(
     function (data) {
