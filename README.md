@@ -46,7 +46,7 @@ Shower Thoughts application works with Node.js. Also, it uitlize MySQL as the da
 
 # Repository:
 
-* Repository: https://github.com/ibarrasb/Project1
-* Heroku: 
+* Repository: https://github.com/ibarrasb/Shower-Thoughts
+* Heroku: https://shower-thoughts-project.herokuapp.com/home
 * Presentation: https://drive.google.com/file/d/18Fnocsam9SyXYz7KXX2oibOGzAYLScFM/view?usp=sharing
 
